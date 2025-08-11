@@ -30,19 +30,8 @@ export default function MipulPage() {
         <header className="border-b">
           <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
             <div className="flex items-center gap-3">
-              {/* Logo: subí /public/mipul-logo.png */}
-              <img
-                src="/mipul-logo.png"
-                alt="MIPUL"
-                className="h-10 w-auto rounded"
-                onError={(e) => { e.currentTarget.style.display = "none"; }}
-              />
-              <div>
-                <div className="font-bold tracking-wide">MIPUL</div>
-                <div className="text-xs text-zinc-600">
-                  Manejo Integrado de Plagas Urbanas de Lincoln
-                </div>
-              </div>
+              {/* Logo solo */}
+              <img src="/mipul-logo.png" alt="MIPUL" className="h-12 w-auto" />
             </div>
             <div className="hidden sm:flex items-center gap-4">
               <a href={WHATSAPP_URL} className="rounded-xl px-4 py-2 bg-emerald-600 text-white hover:bg-emerald-700">WhatsApp</a>
@@ -55,9 +44,7 @@ export default function MipulPage() {
         <section className="relative overflow-hidden bg-gradient-to-br from-emerald-50 to-emerald-100">
           <div className="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h1 className="text-4xl font-extrabold leading-tight text-emerald-900">
-                Manejo Integrado de Plagas Urbanas de Lincoln
-              </h1>
+              <h1 className="text-4xl font-extrabold leading-tight text-emerald-900">Manejo Integrado de Plagas Urbanas de Lincoln</h1>
               <p className="mt-3 text-zinc-700">Provincia de Buenos Aires • Atención a edificios, comercios e industrias.</p>
               <div className="mt-4 flex flex-wrap gap-2">
                 <span className="inline-flex items-center gap-2 text-xs bg-emerald-800 text-emerald-50 px-3 py-1 rounded-full">Habilitación provincial Nº 3259</span>
@@ -67,9 +54,7 @@ export default function MipulPage() {
                 <a href={WHATSAPP_URL} className="rounded-2xl px-6 py-3 bg-emerald-600 text-white text-center hover:bg-emerald-700">Escribinos por WhatsApp</a>
                 <a href={IG} target="_blank" rel="noreferrer" className="rounded-2xl px-6 py-3 border text-center">Instagram @m.i.p.u.l</a>
               </div>
-              <p className="mt-3 text-sm text-zinc-600">
-                Contacto directo: <a className="underline" href={`tel:${PHONE_TEL}`}>{PHONE_DISPLAY}</a>
-              </p>
+              <p className="mt-3 text-sm text-zinc-600">Contacto directo: <a className="underline" href={`tel:${PHONE_TEL}`}>{PHONE_DISPLAY}</a></p>
             </div>
             <div className="rounded-2xl bg-white/70 border p-6">
               <h2 className="font-semibold">Servicios</h2>
@@ -87,9 +72,7 @@ export default function MipulPage() {
         <section className="max-w-6xl mx-auto px-4 py-10">
           <div className="rounded-2xl border p-6 bg-white">
             <h2 className="text-2xl font-bold">Sobre MIPUL</h2>
-            <p className="mt-2 text-zinc-700">
-              Mipul (Manejo Integrado de Plagas Urbanas de Lincoln) es una empresa de Salud Ambiental — agente de la salud pública — dedicada a las desinfecciones de ambientes, control de plagas urbanas y limpieza de tanques de agua potable. Brindamos también servicios de consultoría, peritaje y capacitaciones.
-            </p>
+            <p className="mt-2 text-zinc-700">Mipul (Manejo Integrado de Plagas Urbanas de Lincoln) es una empresa de Salud Ambiental — agente de la salud pública — dedicada a las desinfecciones de ambientes, control de plagas urbanas y limpieza de tanques de agua potable. Brindamos también servicios de consultoría, peritaje y capacitaciones.</p>
           </div>
         </section>
 
@@ -127,7 +110,7 @@ export default function MipulPage() {
         <footer className="py-10">
           <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-3">
-              <img src="/mipul-logo.png" alt="MIPUL" className="h-8 w-auto rounded" onError={(e) => { e.currentTarget.style.display = "none"; }} />
+              <img src="/mipul-logo.png" alt="MIPUL" className="h-8 w-auto" />
               <div>
                 <div className="font-semibold">MIPUL</div>
                 <div className="text-xs text-zinc-500">Provincia de Buenos Aires</div>
